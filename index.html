@@ -1,50 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>abggamer.github.io</title>
-    
-  <meta charset="utf-8">
-  <title>particles.js</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
-</head>
-<body>
+<!-- <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> !-->
+<html>
+	<head>
+		<style>
+			body
+			{
+				background-color: rgb(34, 53, 26);
+				background-image: url(bg.jpg);
+				background-repeat: repeat;
+				background-size: cover;
+				height: 100%;
+  				display: grid;
+  				margin: 0;
+			}
 
-<!-- count particles -->
-<div class="count-particles">
-  
-</div>
+			center
+			{
+				margin: auto;
+			}
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
+			img.logo
+			{
+				height: 15vh;
+			}
 
-<!-- scripts -->
-<script src="../particles.js"></script>
-<script src="js/app.js"></script>
+			a 
+			{
+				color: white;
+				text-align: center;
+				font-size: 1.1vh;
+				font-family: monospace;
+				text-shadow: 2px 2px #000000;
+			}
 
-<!-- stats.js -->
-<script src="js/lib/stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
+			p.check
+			{
+				color: rgb(180, 180, 180);
+				font-family: monospace;
+				font-size: 0.8vh;
+				text-shadow: 2px 2px #000000;
+			}
 
-</body>
+			p.abg
+			{
+				color: rgb(255, 255, 255);
+				font-family: monospace;
+				font-size: 1.2vh;
+				text-align: justify;
+				max-width: 400px;
+				text-shadow: 2px 2px #000000;
+			}
+
+			b
+			{
+				color: white;
+			}
+
+			img.fuck
+			{
+				margin-left: 25px;
+				margin-right: 25px;
+				margin-bottom: 25px;
+			}
+
+			img.fuck2
+			{
+				position: relative;
+				top: 35%;
+				transform: translateY(-50%);
+				margin-left: 25px;
+				margin-right: 25px;
+				margin-bottom: 25px;
+			}
+
+			center.darken 
+			{
+				background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); inherit;
+				box-shadow: 0 0 25px;
+			}
+
+		</style>
+		<title>ABG</title>
+	</head>
+
+	<body>
+		<center class="darken">
+            <img class="logo" src="siglogo.png"/><br/>
+           
+            <a class="abg">Welcome to the A.B.G.BOT site.</a>
+            <p><a class="abg">---ABOUT---</a></p>
+            <p><a class="abg">The bot get fast updates.</a></p>
+            <p><a class="abg">You can use the bot as a server assistant</a></p>
+            <p><a class="abg">---COMMANDS---</a></p>
+            <p><a class="abg">abg!hello -> reply: hello</a></p>
+            <p><a class="abg">abg!ban(only owner) -> banning a member</a></p>
+            <p></p><a class="abg">abg!kick(only owner) -> kicking a member</a></p>
+            <p><a class="abg">abg!warn(only owner) -> warning a member</a></p>
+            <p></p><a class="abg">AND MORE!</a></p>
+            <p></p><a class="abg">---WARNING---</a></p>
+            <p></p><a class="abg">IF YOU INVITE THIS BOT YOU MUST ADD AN NEW ROLE TO YOUR SERVER</a></p>
+            <p><a class="abg">WITH THE NAME: ABGBOTACCES.</a></p>
+			<p></p><br/><br/><br/>
+        </p><div style="overflow: hidden; display: flex; justify-content: center;">
+            <a href="https://discordapp.com/api/oauth2/authorize?client_id=563079016383512647&permissions=8&scope=bot">
+                <img class="fuck" src="pp.png"/>
+            </a>
+        </p><div style="overflow: hidden; display: flex; justify-content: center;">
+            <a href="https://discord.gg/fSWw4wm">
+                <img class="fuck" src="join.png"/>
+            </a>
+            
+		</center>
+	</body>
+
 </html>
